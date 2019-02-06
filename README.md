@@ -10,7 +10,7 @@ The app has three basic functions:
 
 1. Customer View - calls a JS file which connects to a MySQL database and displays a basic table containing a list of products and price info. The user then selects an id number from the table and the amount of units they which to purchase. The values are then changed using MySQL commands sent from the JS file and order results displayed.
 
-![Alt Text](gifs/customer.js)
+![Alt Text](gifs/customer.gif)
 
 2. Manager View - prompts the user with 4 choices:
 
@@ -28,7 +28,7 @@ The app has three basic functions:
 
    4. Add New Porduct - Prompts the user for the new product name, department, unit price, and quantity available for sale numbers. After MySQL commands are used to add a new row to the products for sale table.
 
-   ![Alt Text](gifs/add-item)
+   ![Alt Text](gifs/add-item.gif)
 
 3. Supervisor View - Coming soon...
 
