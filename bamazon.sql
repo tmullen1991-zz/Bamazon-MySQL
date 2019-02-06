@@ -1,5 +1,7 @@
 CREATE DATABASE bamazon_db;
 
+USE bamazon_db;
+
 CREATE TABLE products(
     id INTEGER(11) AUTO_INCREMENT NOT NULL,
     product_name VARCHAR(100),
@@ -19,3 +21,20 @@ INSERT INTO products(product_name, department_name, price, stock_quantity) VALUE
 INSERT INTO products(product_name, department_name, price, stock_quantity) VALUES("Carry-on Suitcase", "Luggage", 49.99, 120);
 INSERT INTO products(product_name, department_name, price, stock_quantity) VALUES("Dress Shoes", "Clothing", 249.99, 30);
 INSERT INTO products(product_name, department_name, price, stock_quantity) VALUES("Phone Case", "Cell Phones & Accessories", 35.00, 300);
+
+CREATE TABLE departments(
+    department_id INTEGER(11) AUTO_INCREMENT NOT NULL,
+    department_name VARCHAR(100),
+    overhead_costs INTEGER(11) NOT NULL,
+    PRIMARY KEY (department_id)
+);
+
+INSERT INTO departments(department_name, overhead_costs) VALUES("Electronics", 5000);
+INSERT INTO departments(department_name, overhead_costs) VALUES("Clothing", 0);
+INSERT INTO departments(department_name, overhead_costs) VALUES("Kitchen", 0);
+INSERT INTO departments(department_name, overhead_costs) VALUES("Books", 0);
+INSERT INTO departments(department_name, overhead_costs) VALUES("Luggage", 0);
+INSERT INTO departments(department_name, overhead_costs) VALUES("Cell Phones & Accessories", 0);
+
+ALTER TABLE products 
+ADD product_sales INTEGER(11) NOT NULL;
